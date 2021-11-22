@@ -1,20 +1,17 @@
 import React from 'react';
 import './styles.css'
 
+//import de Componentes en orden Alfabetico
+import Header from '../Common/Header';
+
+const logo_link = 'https://e7.pngegg.com/pngimages/158/639/png-clipart-spotify-streaming-media-logo-playlist-spotify-app-icon-logo-music-download.png'
+
 function PageLayout ({children}) {
 
   return(
     <div className='layout'>
-      <nav>
-        <img className='logo' src='./images/disney-logo.png' alt='logo.png' />
-        <ul className='layout-menu'>
-          <li>Option 1</li>
-          <li>Option 2</li>
-          <li>Option 3</li>
-          <li>Option 4</li>
-        </ul>
-      </nav>
-
+      <Header logo_url={logo_link}/>
+      {children}
     </div>
   )
 }

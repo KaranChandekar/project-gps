@@ -1,0 +1,23 @@
+.nav-bar > ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-bar > ul > li > a {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-bar > ul > li > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
